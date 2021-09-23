@@ -1,10 +1,7 @@
 我修改了....
 git diff
 git diff HEAD
-<<<<<<< HEAD
-
-dev 分支的第一次提交
-=======
 测试git cherry-pick dev
 测试git cherry-pick dev22222
->>>>>>> e101027... 第二次的cherry-pick
+
+dev:pick1
