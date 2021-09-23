@@ -3,3 +3,9 @@ git diff
 git diff HEAD
 测试git cherry-pick dev
 测试git cherry-pick dev22222
+<<<<<<< HEAD
+=======
+
+dev:pick1
+dev:pick2
+>>>>>>> 1797a51... ????
