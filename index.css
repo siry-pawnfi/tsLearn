@@ -1,0 +1,8 @@
+.boxccc{
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex: 2 1 auto;
+    justify-content: space-around;
+}
