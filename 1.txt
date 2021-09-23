@@ -6,3 +6,7 @@ git diff HEAD
 
 dev:pick1
 dev:pick2
+<<<<<<< HEAD
+=======
+main:pick1
+>>>>>>> fe4990e... ,,.
