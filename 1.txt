@@ -6,11 +6,8 @@ git diff HEAD
 
 dev:pick1
 dev:pick2
-<<<<<<< HEAD
 main:pick1
-=======
 main:pick1
 deb:pick3
 dev:pick4
 
->>>>>>> aa96a7c... .........
