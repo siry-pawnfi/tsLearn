@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            resize: none;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea cols="30" rows="2" placeholder="asdasdassd"></textarea>
+
+    <script>
+      
+        // for(var i =0 ;i<5;i++){
+        //     console.log(i)
+        // }//输出0 1 2 3 4
+        // console.log('*'.repeat(20))
+
+   
+        // for(var i=0;i<5;i++){
+        //     setTimeout(function(){
+        //         console.log(i)
+        //     },i*1000)
+        // }//5 5 5 5 5 
+
+        // console.log('*'.repeat(20))
+        // for(var i=0;i<5;i++){
+        //     (function(i){
+        //         setTimeout(function(){
+        //             console.log(i)
+        //         },i*1000)
+        //     })(i)
+        // }//闭包保持了对i的引用  输出0 1 2 3 4
+
+        // console.log('*'.repeat(20))
+        // //删除了fun的形参i
+        // for(var i=0;i<5;i++){
+        //     (function(){
+        //         setTimeout(function(){
+        //             console.log(i)
+        //         },i*1000)
+        //     })(i)
+        // }//不能保持对i的引用,输出5 5 5 5 5
+
+        // console.log('*'.repeat(20))
+        // //给定时器传入一个立即执行函数,函数的返回值为undefined
+        // //等价于  setTimeout(undefined,i*1000)
+        // for(var i=0;i<5;i++){
+        //     setTimeout((function(){
+        //         console.log(i)
+        //     })(i),i*1000)
+        // }//立即输出 0 1 2 3 4
+
+
+        setTimeout(function(){
+            console.log(1)
+        },1)
+        
+        new Promise(resolve => {
+            console.log(2)
+            for(var i=0;i<10000;i++){
+                i === 9999 && resolve()
+            }
+            console.log(3)
+        }).then(res=>{
+            console.log(4)
+        })
+        console.log(5)
+        //输出 2 3 5 4 1
+
+
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            outline: 1px solid red;
+        }
+        div{
+            width: 120px;
+            /* 这个属性是用来控制空白字符的显示的 */
+            white-space:normal;
+            /* 这个属性是控制单词如何被拆分换行的。 normal | break-all | keep-all*/
+            /* word-wrap: break-word; */
+
+
+
+            /* 这个属性是控制单词如何被拆分换行的。实际上是作为word-break的互补，它只有两个值：normal | break-word，那我们看下break-word： */
+            /* word-break */
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        Hi&nbsp;&nbsp;,
+        This   is a incomprehensibilities long word.
+        </br>
+        你好&nbsp;&nbsp;，
+        这   是一个不可思议的长单词
+      </div>
+      <script>
+          //一个字节 8 个比特位
+          //#f5f5f5   16进制,一个位是4个比特位  整好4*6=24个比特位
+            //   console.log(1<<24)  //基数1     左移24位
+            //~~ 用来  取整
+        //   console.log(  (~~(Math.random()*(1 << 24))).toString(16)  )
+          document.querySelectorAll("*").forEach(item=>{
+              item.style.outline = '1px solid #' + (~~(Math.random()*(1 << 24))).toString(16)
+          })
+      </script>
+</body>
+</html>
